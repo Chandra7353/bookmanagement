@@ -11,7 +11,7 @@ This is a Node.js application for user authentication. It provides endpoints for
 git clone https://github.com/your-username/user-authentication-api.git
 cd user-authentication-API
 
-The API will be available at Running PORT 4200 by default. You can change the port in the index.js file if needed.
+The API will be available at Running PORT 4200 by default. You can change the port in the .env file if needed.
 
 
 
