@@ -13,7 +13,43 @@ cd user-authentication-API
 
 The API will be available at Running PORT 4200 by default. You can change the port in the .env file if needed.
 
+# Endpoints
+1. Add a Book
+URL: /addBook
+Method: POST
+Description: Add a new book to the database by providing a title, author, and summary. The userid is automatically associated with the currently authenticated user.
+Request Body:
+{
+  "title": "Sample Book",
+  "author": "Sample Author",
+  "summary": "A brief summary of the book."
+}
 
+2. View All Books
+URL: /viewallbooks
+Method: GET
+Description: Retrieve all books from the database.
+
+3. View a Single Book
+URL: /singlebook/:id
+Method: GET
+Description: Retrieve details of a specific book by providing its id.
+
+4. Update a Book
+URL: /updatebook/:id
+Method: PUT
+Description: Update the details of a book by providing its id and the new data in the request body.
+Request Body:
+{
+  "title": "Updated Book Title",
+  "author": "Updated Author",
+  "summary": "Updated summary of the book."
+}
+
+5. Delete a Book
+URL: /deletebook/:id
+Method: DELETE
+Description: Delete a book from the database by providing its id.
 
 
  
